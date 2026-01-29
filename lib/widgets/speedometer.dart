@@ -56,7 +56,7 @@ class Speedometer extends StatelessWidget {
                 '$speed',
                 style: const TextStyle(
                   color: Colors.white,
-                  fontSize: 48,
+                  fontSize: 40, // Reduced from 48
                   fontWeight: FontWeight.bold,
                   height: 1.0,
                 ),
@@ -65,7 +65,7 @@ class Speedometer extends StatelessWidget {
                 unit,
                 style: const TextStyle(
                   color: Color(0xFF2979FF),
-                  fontSize: 14,
+                  fontSize: 12, // Reduced from 14
                   fontWeight: FontWeight.w600,
                 ),
               ),

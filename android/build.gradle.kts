@@ -17,6 +17,11 @@ subprojects {
 }
 subprojects {
     project.evaluationDependsOn(":app")
+    project.configurations.all {
+        resolutionStrategy {
+            force("com.google.android.libraries.places:places:3.3.0")
+        }
+    }
 }
 
 tasks.register<Delete>("clean") {
