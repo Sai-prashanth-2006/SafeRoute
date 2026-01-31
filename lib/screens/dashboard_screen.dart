@@ -21,7 +21,7 @@ class DashboardScreen extends StatelessWidget {
                 children: [
                   const CircleAvatar(
                     radius: 20,
-                    backgroundImage: AssetImage('assets/images/avatar_placeholder.png'), // Placeholder
+                    // backgroundImage: AssetImage('assets/images/avatar_placeholder.png'), // Placeholder
                     backgroundColor: Color(0xFF2979FF),
                     child: Icon(Icons.person, color: Colors.white),
                   ),

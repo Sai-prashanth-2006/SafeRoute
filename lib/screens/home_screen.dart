@@ -230,11 +230,13 @@ class _HomeScreenState extends State<HomeScreen> {
          }
       }
 
+      print('HomeScreen: Calling getDirections...');
       final directions = await _directionsService.getDirections(
         origin: origin,
         destination: destination,
         mode: _currentMode,
       );
+      print('HomeScreen: getDirections returned: ${directions != null ? "Data" : "Null"}');
 
       if (directions != null) {
         setState(() {
@@ -438,8 +440,8 @@ class _HomeScreenState extends State<HomeScreen> {
                // --- Exit Navigation Button ---
                if (_isNavigating)
                  Positioned(
-                   bottom: 140, // Above bottom bar
-                   right: 16,
+                   bottom: 40, 
+                   left: 20,
                    child: FloatingActionButton(
                      backgroundColor: Colors.red,
                      onPressed: _stopNavigation,
